@@ -2,7 +2,7 @@ module(
     name = "go_ext_wasm",
 )
 
-bazel_dep(name = "rules_go", version = "0.57.0")
+bazel_dep(name = "rules_go", version = "0.57.0", repo_name="io_bazel_rules_go")
 bazel_dep(name = "gazelle", version = "0.45.0")
 
 go_deps = use_extension("@gazelle//:extensions.bzl", "go_deps")

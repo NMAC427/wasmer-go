@@ -1,5 +1,5 @@
 # gazelle:ignore
-load("@rules_go//go:def.bzl", "go_library", "go_test")
+load("@io_bazel_rules_go//go:def.bzl", "go_library", "go_test")
 
 go_library(
     name = "wasmer",
@@ -50,10 +50,10 @@ go_library(
 cc_library(
     name = "lib",
     srcs = select({
-        "@rules_go//go/platform:linux_amd64": ["//wasmer/packaged/lib/linux-amd64:libwasmer.so"],
-        "@rules_go//go/platform:linux_arm64": ["//wasmer/packaged/lib/linux-aarch64:libwasmer.so"],
-        "@rules_go//go/platform:darwin_amd64": ["//wasmer/packaged/lib/darwin-amd64:libwasmer.dylib"],
-        "@rules_go//go/platform:darwin_arm64": ["//wasmer/packaged/lib/darwin-aarch64:libwasmer.dylib"],
+        "@io_bazel_rules_go//go/platform:linux_amd64": ["//wasmer/packaged/lib/linux-amd64:libwasmer.so"],
+        "@io_bazel_rules_go//go/platform:linux_arm64": ["//wasmer/packaged/lib/linux-aarch64:libwasmer.so"],
+        "@io_bazel_rules_go//go/platform:darwin_amd64": ["//wasmer/packaged/lib/darwin-amd64:libwasmer.dylib"],
+        "@io_bazel_rules_go//go/platform:darwin_arm64": ["//wasmer/packaged/lib/darwin-aarch64:libwasmer.dylib"],
         "//conditions:default": ["UNSUPPORTED_PLATFORM"],
     }),
     hdrs = [
