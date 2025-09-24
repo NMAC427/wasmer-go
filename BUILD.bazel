@@ -1,0 +1,8 @@
+load("@gazelle//:def.bzl", "gazelle")
+
+# gazelle:prefix github.com/wasmerio/wasmer-go
+# gazelle:exclude examples
+# gazelle:exclude wasmer/packaged
+gazelle(
+    name = "gazelle",
+)
