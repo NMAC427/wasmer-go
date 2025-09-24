@@ -1,4 +1,4 @@
-module github.com/wasmerio/wasmer-go
+module github.com/NMAC427/wasmer-go
 
 go 1.23
 

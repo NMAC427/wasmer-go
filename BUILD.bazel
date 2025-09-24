@@ -1,6 +1,6 @@
 load("@gazelle//:def.bzl", "gazelle")
 
-# gazelle:prefix github.com/wasmerio/wasmer-go
+# gazelle:prefix github.com/NMAC427/wasmer-go
 # gazelle:exclude examples
 # gazelle:exclude wasmer/packaged
 gazelle(

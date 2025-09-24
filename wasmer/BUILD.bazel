@@ -43,7 +43,7 @@ go_library(
     cgo = True,
     clinkopts = ["-lm -ldl"],
     copts = ["-Ipackaged/include"],
-    importpath = "github.com/wasmerio/wasmer-go/wasmer",
+    importpath = "github.com/NMAC427/wasmer-go/wasmer",
     visibility = ["//visibility:public"],
 )
 
