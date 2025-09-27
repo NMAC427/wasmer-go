@@ -1,6 +1,6 @@
 module github.com/NMAC427/wasmer-go
 
-go 1.23
+go 1.22
 
 require github.com/stretchr/testify v1.7.0
 
